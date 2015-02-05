@@ -1,0 +1,56 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*
+p:target{
+	color: red;
+}
+*/
+
+.container{
+	width: 100%;
+	max-width: 400px;
+}
+
+.accordion{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.accordion-header{
+	display: block;
+	padding: 15px 20px;
+	background: #bbb;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .1);
+	margin-bottom: 5px;
+	border-radius: 8px;
+}
+
+.accordion-content p{
+	margin: 20px;
+}
+
+.accordion-content{
+	height: 0;
+	overflow: hidden;
+	transition: height 400ms ease;
+	-webkit-transition: height 400ms ease;
+}
+
+.accordion-content:target{
+	height: 180px;
+	overflow-y: scroll; 
+}
+
+
+.accordion-header:hover{
+	background: #eee;
+	color: #bbb;
+}
